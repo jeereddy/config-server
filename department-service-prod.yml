@@ -1,0 +1,9 @@
+server:
+  port: 8081
+message: Hello, I am from department service prod environment
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: false
+    service-url:
+      default-zone: http://localhost:8761/eureka/

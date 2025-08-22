@@ -1,0 +1,9 @@
+server:
+  port: 8082
+message: Hello, I am from order service dev environment
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: false
+    service-url:
+      default-zone: http://localhost:8761/eureka/

@@ -4,7 +4,5 @@ message: Hello, I am from user service dev environment
 
 eureka:
   client:
-    register-with-eureka: true
-    fetch-registry: false
     service-url:
       default-zone: http://localhost:8761/eureka/

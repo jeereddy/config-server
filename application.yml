@@ -1,0 +1,5 @@
+global:
+  message: A warm welcome to JustCode
+logging:
+  level:
+    root: ERROR

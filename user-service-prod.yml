@@ -1,3 +1,11 @@
 server:
-  port: 8030
-message: Hello, I am from user service prod environment
+  port: 8081
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: false
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+
+message: Hello, I am from user service Prod environment

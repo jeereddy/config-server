@@ -1,0 +1,3 @@
+server:
+  port: 8030
+message: Hello, I am from user service prod environment

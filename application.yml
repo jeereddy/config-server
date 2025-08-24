@@ -1,8 +1,0 @@
-global:
-  message: A warm welcome to JustCode
-logging:
-  level:
-    root: WARN
-spring:
-  profiles:
-    active: dev

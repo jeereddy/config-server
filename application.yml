@@ -3,3 +3,6 @@ global:
 logging:
   level:
     root: WARN
+spring:
+  profiles:
+    active: dev

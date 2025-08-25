@@ -33,3 +33,44 @@ spring:
     properties:
       hibernate:
         format_sql: true
+  doc:
+    swagger-ui:
+      enabled: true
+      path: /swagger-ui.html
+      tags-sorter: alpha
+      operations-sorter: alpha
+      display-request-duration: true
+      filter: true
+    api-docs:
+      path: /v3/api-docs
+    groups:
+      enabled: true
+
+springdoc:
+  swagger-ui:
+    disable-swagger-default-url: true
+    display-operation-id: true
+    defaultModelsExpandDepth: 2
+    defaultModelExpandDepth: 2
+  api-docs:
+    resolve-schema-properties: true
+  show-actuator: true
+  cache:
+    disabled: true
+
+# Custom Swagger properties
+swagger:
+  enabled: true
+  title: Product Service API
+  description: REST API for Product Management
+  version: 1.0.0
+  contact:
+    name: API Support
+    email: support@example.com
+    url: https://example.com/support
+  license:
+    name: MIT License
+    url: https://opensource.org/licenses/MIT
+  server:
+    url: http://localhost:8080
+    description: Development Server

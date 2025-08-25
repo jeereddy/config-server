@@ -34,9 +34,24 @@ spring:
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       properties:
         spring.json.trusted.packages: '*'
+        spring.json.trusted.packages: "com.example.model.event"
+        spring.json.value.default.type: "com.example.model.event.BaseEvent"
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    topics:
+      user-created: user-created
+      user-updated: user-updated
+      user-deleted: user-deleted
+      order-created: order-created
+      notifications: notifications
+      dead-letter: dead-letter-topic
+  retry:
+    max-attempts: 3
+    backoff:
+      initial-interval: 1000
+      multiplier: 2
+      max-interval: 10000
   cloud:
     openfeign:
       client:

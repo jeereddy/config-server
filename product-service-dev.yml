@@ -57,7 +57,8 @@ springdoc:
   show-actuator: true
   cache:
     disabled: true
-
+  profiles:
+    include: swagger
 # Custom Swagger properties
 swagger:
   enabled: true
